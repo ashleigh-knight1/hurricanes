@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<h1> What category hurricane is this?</h1>
+<h6> Input the windspeed</h6>
+<button onclick= "select()"> Enter </button>
+<input id= "value" />
+<script>
+    function select() {
+        var windspeed = document.getElementById("value").value;
+        if (windspeed > 154) {
+            document.write("Category 5");
+        }
+        else if (windspeed> 130) {
+            document.write("Category 4");
+        }
+        else if (windspeed > 110) {
+            document.write("Category 3");
+        }
+        else if (windspeed > 95) {
+            document.write("Category 2");
+        }
+        else if (windspeed > 73) {
+            document.write("Category 1");
+        }else {document.write("This is not a hurricane.")}
+        }
+
+</script>
+
+</body>
+</html>
+
+
+
